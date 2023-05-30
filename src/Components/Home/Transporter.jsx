@@ -4,7 +4,7 @@ const Transporter = ({setDetails}) => {
     const [orders, setOrders] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/oderget')
+        fetch('https://mern-dashboard-server.vercel.app/oderget')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])

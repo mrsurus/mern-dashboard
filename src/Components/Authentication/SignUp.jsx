@@ -30,7 +30,7 @@ const SignUp = () => {
                             isTransporter: checkvalue,
                             address: data.address
                         }
-                        fetch('http://localhost:5000/users', {
+                        fetch('https://mern-dashboard-server.vercel.app/users', {
                             method: 'POST',
                             headers: {
                                 'content-type': 'application/json'

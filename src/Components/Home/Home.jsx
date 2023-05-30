@@ -12,7 +12,7 @@ import Detailsmodal from './Detailsmodal';
  
     console.log(details, 'from modal');
     useEffect(()=>{
-        fetch(`http://localhost:5000/user/${user?.email}`)
+        fetch(`https://mern-dashboard-server.vercel.app/user/${user?.email}`)
         .then(res => res.json())
         .then(data =>setData(data))
     },[user])
